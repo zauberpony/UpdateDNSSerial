@@ -1,3 +1,5 @@
-This is a mirror of http://www.vim.org/scripts/script.php?script_id=2445
+This is a fork of vim-scripts/UpdateDNSSerial, which itself is "is a mirror of http://www.vim.org/scripts/script.php?script_id=2445"
+
+I just fixed the regular expression searching for the serial, as in FreeBSD 9.1's bind, it does not match after bind updated the zone, because bind writes a lower case "serial".
 
 This script help you to update automatically the serial of SOA when editing a DNS zone with vim. It find the serial, increment or update with the current time as : YYYYMMDDNU where YYYY=year, MM: month, DD:day, NU:number version.
